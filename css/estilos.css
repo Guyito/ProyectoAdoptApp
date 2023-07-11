@@ -192,3 +192,11 @@ body {
 @media (min-width: 992PX){
 
 }
+
+/*ANIMACIONES*/
+
+body {
+
+    background: linear-gradient(purple, red);
+    color: white;
+}
