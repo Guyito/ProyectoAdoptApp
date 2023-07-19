@@ -9,9 +9,9 @@
 
 /*Body + animaciones*/
 
-body {
+html, body {
 
-    background: linear-gradient(purple, red);
+    background: linear-gradient(#75C2F6, rgb(120, 120, 238));
     color: white;
     display: block;
 }
@@ -26,13 +26,14 @@ h1 {
 }
 
 h2, h3 {
+    font-family: "Mystery Quest", cursive;
     color: black;
 }
 header {
     display: flex;
     height: 70px;
     justify-content: space-between;
-    background-color: #384252;
+    background-color: #1D5D9B;
     align-items: center;
     padding: 10px;
 }
@@ -189,7 +190,8 @@ margin: 0 auto;
 
 /*footer*/
 .piedepag {
-    background-color: #384252;
+    background-color: #6528F7;
+    padding: 10px;
 }
 
 
