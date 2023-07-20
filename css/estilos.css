@@ -96,7 +96,7 @@ li {
 main {
     margin: 0 auto;
     width: 1000px;
-    padding: 50px;
+    padding: 55px;
     margin-left: 15%;
     }
 
@@ -221,12 +221,13 @@ h4 {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, button [type=submit] {
     width: 100%;
     margin-top: 0;
     }
 }
 
+/* A IMPLEMENTAR
 .col-25 {
     float: left;
     width: 25%;
@@ -238,9 +239,8 @@ h4 {
     width: 75%;
     margin-top: 6px;
 }
-.row:after {
+.row {
     content: "";
     display: table;
     clear: both;
 }
-
