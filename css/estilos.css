@@ -9,11 +9,13 @@
 
 /*Body + animaciones*/
 
-html, body {
-
+body {
     background: linear-gradient(#75C2F6, rgb(120, 120, 238));
-    color: white;
     display: block;
+}
+
+html {
+    width: 100%;
 }
 
 /*encabezado y nav*/
@@ -31,11 +33,11 @@ h2, h3 {
 }
 header {
     display: flex;
-    height: 70px;
+    height: 100px;
     justify-content: space-between;
     background-color: #1D5D9B;
     align-items: center;
-    padding: 10px;
+    padding: 50px;
 }
 
 .logo { 
@@ -63,6 +65,11 @@ li {
 
 /* Principal MAIN - SECCIONES - ARTICULOS*/
 
+.mascotas {
+    margin: 0;
+    padding: 86px;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -83,15 +90,15 @@ li {
     border: solid 2px;
     text-align: center;
     font-family: "Mystery Quest";
+    text-align: match-parent;
 }
 
 main {
-    margin: auto;
+    margin: 0 auto;
+    width: 1000px;
     padding: 50px;
-    margin-left: 2%;
+    margin-left: 15%;
     }
-    
-
 
 @font-face {
     font-family: "Mystery Quest";
@@ -144,7 +151,7 @@ p {
 .registracion {
 
     width: 400px;
-    padding: 30px;
+    padding: 61px;
     margin: auto;
     margin-top:  100px;
     border-radius: 4px;
@@ -155,10 +162,15 @@ p {
 
 input, textarea, select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 3px;
     resize: vertical;
+}
+
+label {
+    padding: 5px 5px 5px 0;
+    display: inline-block;
 }
 
 div button {
@@ -170,13 +182,13 @@ div button {
     cursor: pointer;
     float: right;
     transition: width 2s;
-
 }
 .container {
 max-width: 1200px;
 margin: 0 auto;
+border-radius: 5px;
+padding: 20px;
 }
-
 
 .donacion :hover {
     font-style: italic;
@@ -185,21 +197,50 @@ margin: 0 auto;
     width: auto;
     height: auto;
     background-color: #5A96E3;
-
 }
 
 /*footer*/
 .piedepag {
     background-color: #6528F7;
-    padding: 10px;
+    font-size: small;
+    height: 70px;
+    padding: 20px;
 }
 
+.rrss {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+h4 {
+    font-size: 20px;
+    color: #e9d6af;
+    font-family: "Mystery Quest", cursive;
+}
 
 /*MEDIA QUERIES*/
 
-@media (min-width: 992PX){
-
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
 }
 
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
