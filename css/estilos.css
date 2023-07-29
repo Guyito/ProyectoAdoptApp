@@ -31,7 +31,7 @@ main {
 
 section form {
     height: 430px;
-    
+
 }
 
 /*encabezado y nav*/
@@ -71,6 +71,10 @@ nav a {
     padding-right: 5px;
     color: #e9d6af;
     font-family: "Mystery Quest", cursive;
+}
+
+.nav-link{
+    color: #e9d6af;
 }
 
 /*lista menu*/
