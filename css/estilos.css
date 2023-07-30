@@ -64,6 +64,7 @@ nav a {
     padding-right: 5px;
     color: #e9d6af;
     font-family: "Mystery Quest", cursive;
+    text-decoration: none;
 }
 
 .nav-link{
@@ -79,6 +80,11 @@ nav li {
 
 /* Principal MAIN - SECCIONES - ARTICULOS*/
 
+section article{
+
+    padding: 50px;
+    text-align: center;
+}
 .mascotas {
     margin: 0;
     padding: 86px;
@@ -195,7 +201,6 @@ p {
 }
 
 .container {
-    width: 90%;
     max-width: 600px;
     border-radius: 5px;
     padding: 50px;
@@ -248,19 +253,28 @@ h4 {
 
 /*MEDIA QUERIES - Mobile*/
 
-
 @media (max-width: 576px) {
 
-    .donacion {
-        font-size: xx-large;
+    h1, h2 {
+        font-family: 'Times New Roman', Times, serif
+
     }
+    p {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a.navbar h1 {
+    font-size: x-small;
+    }
+
 
     .registracion {
-        width: 300px;
+        width: auto;
     }
 
-    section .grid-container {
+    .grid-container {
         grid-template-columns: auto;
+        
     }
 
     .flex-container {
@@ -272,40 +286,13 @@ h4 {
     }
 
     .formulariologin {
-        background-color: #e9d6af;
         width: auto;
     }
-}
 
-/*
-@media (max-width: 576px) {
-    .col-25, .col-75, button [type=submit] {
-    width: 100%;
-    margin-top: 0;
-    }
-}
-
-/* A IMPLEMENTAR
-
-@media (max-width: 576px) {
-
-    .col-25 {
-        float: left;
-        width: 25%;
-        margin-top: 6px;
+    iframe {
+        width: auto;
     }
     
-    .col-75 {
-        float: left;
-        width: 75%;
-        margin-top: 6px;
-    }
-    .row {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    }
+}
 
-/*MENU NAV*/
 
