@@ -16,14 +16,7 @@ body {
     display: block;
 
 }
-/*
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-areas: 
-"header header header header"
-"main main main aside"
-"footer footer footer footer";
-*/
+
 main {
     margin: 0;
     padding: 60px;
@@ -31,7 +24,6 @@ main {
 
 section form {
     height: 430px;
-
 }
 
 /*encabezado y nav*/
@@ -160,7 +152,8 @@ p {
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
+    flex-direction: row;
+    padding: 20px;
     justify-content: center;
 }
 
@@ -171,13 +164,29 @@ p {
 
 /*link selector MP y transito*/
 
+.donacion :hover {
+    padding: 10px;
+    font-style: italic;
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: #5A96E3;
+    color: white;
+}
+
+.formulariologin {
+    margin: auto;
+    /*width: 90%;*/
+    max-width: 600px;
+    border-radius: 5px;
+    /*padding: 50px;*/
+    
+    }
+
 .registracion {
 
-    width: 400px;
-    border-radius: 4px;
+    width: auto;
+    height: auto;
     font-family: 'calibri';
-    align-items: stretch;
-    align-content: center;
 }
 
 .registracion p {
@@ -192,7 +201,6 @@ p {
     padding: 50px;
     }
 
-/*Formulario y boton*/
 
 input, textarea, select {
     width: 100%;
@@ -218,15 +226,6 @@ div button {
     transition: width 2s;
 }
 
-.donacion :hover {
-    font-style: italic;
-    transform: scale(1.1);
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-    background-color: #5A96E3;
-    color: white;
-}
 
 /*footer*/
 .piedepag {
@@ -252,12 +251,29 @@ h4 {
 
 @media (max-width: 576px) {
 
+    .donacion {
+        font-size: xx-large;
+    }
+
+    .registracion {
+        width: 300px;
+    }
+
     section .grid-container {
         grid-template-columns: auto;
     }
 
-    section .flex-container .flex-caja {
-        grid-template-columns: auto;
+    .flex-container {
+        flex-direction: column;
+        align-content: center;
+    }
+    .flex-caja {
+        width: auto;
+    }
+
+    .formulariologin {
+        background-color: #e9d6af;
+        width: auto;
     }
 }
 
@@ -269,7 +285,7 @@ h4 {
     }
 }
 
-/* A IMPLEMENTAR*/
+/* A IMPLEMENTAR
 
 @media (max-width: 576px) {
 
