@@ -48,12 +48,13 @@ h2, h3 {
     color: black;
 }
 header {
-    display: flex;
-    height: 100px;
     justify-content: space-between;
     background-color: #1D5D9B;
     align-items: center;
-    padding: 50px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
 }
 
 .logo { 
