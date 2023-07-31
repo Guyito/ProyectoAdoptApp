@@ -110,7 +110,7 @@ section article{
     text-align: center;
     font-family: "Mystery Quest";
     text-align: match-parent;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* FUENTE DE LETRA */
@@ -255,7 +255,7 @@ h4 {
 
 @media (max-width: 576px) {
 
-    h1, h2 {
+    h1, h2, a, {
         font-family: 'Times New Roman', Times, serif
 
     }
@@ -274,7 +274,7 @@ h4 {
 
     .grid-container {
         grid-template-columns: auto;
-        
+        grid-auto-rows: auto;
     }
 
     .flex-container {
