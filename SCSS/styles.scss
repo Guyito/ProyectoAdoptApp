@@ -14,13 +14,16 @@ body {
     flex-direction: column;
     margin: 0 auto;
     display: block;
-
+    main {
+        margin: 0;
+        padding: 60px;
+        }
+        p {
+            font-family: "Mystery Quest", cursive;
+            color: black;
+            font-size: large;
+        }
 }
-
-main {
-    margin: 0;
-    padding: 60px;
-    }
 
 section form {
     height: 430px;
@@ -39,39 +42,31 @@ h2, h3 {
     font-family: "Mystery Quest", cursive;
     color: black;
 }
+
 header {
     justify-content: space-between;
     background-color: #1D5D9B;
     align-items: center;
+    img {
+        height: 100px;
+    }
+    nav a {
+        font-weight: 500;
+        padding-right: 5px;
+        color: #e9d6af;
+        font-family: "Mystery Quest", cursive;
+        text-decoration: none;
+    }
 }
-
 .navbar-collapse {
     flex-grow: 0;
 }
 
-.logo { 
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.logo img {
-    height: 50px;
-}
-
-nav a {
-    font-weight: 500;
-    padding-right: 5px;
-    color: #e9d6af;
-    font-family: "Mystery Quest", cursive;
-    text-decoration: none;
-}
-
+/*lista menu*/
 .nav-link{
     color: #e9d6af;
 }
 
-/*lista menu*/
 
 nav li {
     text-align: center;
@@ -81,9 +76,11 @@ nav li {
 /* Principal MAIN - SECCIONES - ARTICULOS*/
 
 section article{
-
     padding: 50px;
     text-align: center;
+    height: 800px;
+    overflow: scroll;
+
 }
 .mascotas {
     margin: 0;
@@ -119,19 +116,12 @@ section article{
     src: url("./fonts/mustery-quest.ttf");
 }
 
-p {
-    font-family: "Mystery Quest", cursive;
-    color: black;
-    font-size: large;
-}
-
 .textoingreso {
 
     width: 350px;
     height: 400px;
     padding: 50px 30px 20px 60px;
 }
-
 
 /*cajas mascotas*/
 .flex-caja {
@@ -189,15 +179,13 @@ p {
     }
 
 .registracion {
-
     width: auto;
     height: auto;
     font-family: 'calibri';
-}
-
-.registracion p {
-    text-align: center;
-    font-size: 25px;
+    p {
+        text-align: center;
+        font-size: 25px;
+    }
 }
 
 .container {
@@ -205,7 +193,6 @@ p {
     border-radius: 5px;
     padding: 50px;
     }
-
 
 input, textarea, select {
     width: 100%;
@@ -230,7 +217,6 @@ div button {
     float: right;
     transition: width 2s;
 }
-
 
 /*footer*/
 .piedepag {
