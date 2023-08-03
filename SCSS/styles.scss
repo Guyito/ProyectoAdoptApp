@@ -17,6 +17,7 @@ body {
     main {
         margin: 0;
         padding: 60px;
+        height: auto;
         }
         p {
             font-family: "Mystery Quest", cursive;
@@ -76,9 +77,9 @@ nav li {
 /* Principal MAIN - SECCIONES - ARTICULOS*/
 
 section article{
-    padding: 50px;
+    padding: 100px;
     text-align: center;
-    height: 800px;
+    height: auto;
     overflow: scroll;
 
 }
@@ -163,10 +164,10 @@ section article{
 .donacion :hover {
     padding: 10px;
     font-style: italic;
-    transform: scale(1.1);
-    border-radius: 5px;
-    background-color: #5A96E3;
-    color: white;
+    transform: scale(10);
+    border-radius: 10px;
+    background-color: #e9d6af;
+    color: black;
 }
 
 .formulariologin {
@@ -241,6 +242,11 @@ h4 {
 
 @media (max-width: 576px) {
 
+    body main {
+
+        height: auto;
+    }
+
     h1, h2, a, p {
         font-family: 'Times New Roman', Times, serif;
     }
@@ -275,7 +281,3 @@ h4 {
     }
     
 }
-
-/* VARIABLES 
-
-$ColorLetra: #e9d6af;
