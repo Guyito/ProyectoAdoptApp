@@ -241,11 +241,7 @@ h4 {
 
 @media (max-width: 576px) {
 
-    h1, h2, a, {
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    p {
+    h1, h2, a, p {
         font-family: 'Times New Roman', Times, serif;
     }
 
@@ -279,3 +275,7 @@ h4 {
     }
     
 }
+
+/* VARIABLES 
+
+$ColorLetra: #e9d6af;
