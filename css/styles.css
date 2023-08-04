@@ -253,7 +253,10 @@ footer .social_icon li a :hover {
   body main {
     height: auto;
   }
-  h1, h2, a, p {
+  body main p {
+    font-family: "Times New Roman", Times, serif;
+  }
+  h1, h2, h3, a, p {
     font-family: "Times New Roman", Times, serif;
   }
   a.navbar h1 {
