@@ -30,7 +30,7 @@ section form {
 /*encabezado y nav*/
 h1 {
   color: #e9d6af;
-  font-family: "Mystery Quest", cursive;
+  font-family: "Mystery Quest" cursive;
   padding-left: 10px;
   font-size: x-large;
 }
@@ -38,6 +38,12 @@ h1 {
 h2, h3 {
   font-family: "Mystery Quest", cursive;
   color: black;
+}
+
+h4 {
+  font-size: 20px;
+  color: #e9d6af;
+  font-family: "Mystery Quest", cursive;
 }
 
 header {
@@ -247,12 +253,6 @@ footer .social_icon a {
 
 footer .social_icon li a :hover {
   transform: translateY(-10px);
-}
-
-h4 {
-  font-size: 20px;
-  color: #e9d6af;
-  font-family: "Mystery Quest", cursive;
 }
 
 /*MEDIA QUERIES - Mobile*/
