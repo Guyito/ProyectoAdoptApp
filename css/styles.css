@@ -210,13 +210,6 @@ div button {
   transition: width 2s;
 }
 
-/*footer
-.piedepag {
-    background-color: #6528F7;
-    font-size: small;
-    height: 70px;
-    padding: 20px;
-}*/
 footer {
   position: relative;
   width: 100%;
@@ -266,12 +259,18 @@ footer .social_icon li a :hover {
   a.navbar h1 {
     font-size: x-small;
   }
+  .class-item a {
+    font-family: "Times New Roman", Times, serif;
+  }
   .registracion {
     width: auto;
   }
   .grid-container {
     grid-template-columns: auto;
     grid-auto-rows: auto;
+  }
+  .grid-container .grid-item p {
+    font-family: "Times New Roman", Times, serif;
   }
   .flex-container {
     flex-direction: column;
