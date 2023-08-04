@@ -78,7 +78,6 @@ nav li {
 
 /* Principal MAIN - SECCIONES - ARTICULOS*/
 section article {
-  padding: 100px;
   text-align: center;
   height: auto;
 }
@@ -239,6 +238,7 @@ footer .social_icon {
   align-items: center;
   margin: 10px 0;
   flex-wrap: wrap;
+  padding: 0;
 }
 footer .social_icon li {
   list-style: none;

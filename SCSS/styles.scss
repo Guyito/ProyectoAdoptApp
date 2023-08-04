@@ -83,7 +83,7 @@ nav li {
 /* Principal MAIN - SECCIONES - ARTICULOS*/
 
 section article{
-    padding: 100px;
+
     text-align: center;
     height: auto;
 
@@ -254,6 +254,7 @@ footer {
         align-items: center;
         margin: 10px 0;
         flex-wrap: wrap;
+        padding: 0;
         li {
             list-style: none;
         }
